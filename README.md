@@ -8,25 +8,25 @@
 ## Інструкції з використання
 
 ### Вимоги
-- Python 3.x
+- Python 3.6
 - бібліотека pycryptodome (`pip install pycryptodome`)
 
 ### Кроки
 
 1. **Клонування репозиторію:**
-   ```bash
+   ```
    git clone https://github.com/your-username/Emergency-System-Encryption.git
    cd Emergency-System-Encryption
-
+   ```
 
 Запуск скрипту шифрування:
 
 Відкрийте файл encrypt_data.py та змініть змінну **file_path**, щоб вказати шлях до файлу, який ви хочете зашифрувати.
-    
+``` 
 file_path = "шлях/до/вашого/файлу.txt"
 Збережіть зміни та запустіть скрипт:
 python encrypt_data.py
-
+```
 
 Зашифровані дані будуть збережені у файлі, вказаному в скрипті (за замовчуванням - **encrypted_data.bin**), а ключ шифрування буде збережено в **encryption_key.bin**
 
@@ -37,9 +37,17 @@ python encrypt_data.py
 ###Полезная информация
 
 для полного шыврования диска используйте BitLocker и PowerShell
-
+```
 Включите BitLocker на диске C:.
 Enable-BitLocker -MountPoint "C:" -EncryptionMethod Aes256 -UsedSpaceOnly
 
 Возможно, вам придется перезагрузить компьютер, чтобы завершить процесс.
 Restart-Computer
+```
+###Ліцензія
+Emergency System Encryption розповсюджується під ліцензією Apache 2.0. Докладні відомості можна знайти у файлі LICENSE.
+
+###Відмова від відповідальності
+Автори не несуть відповідальності за будь-які збитки, прямі чи непрямі, спричинені використанням цієї програми.
+
+
