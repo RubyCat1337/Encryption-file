@@ -34,3 +34,11 @@ python encrypt_data.py
 
 Для розшифрування даних використовуйте функцію **decrypt** в файлі **decrypt_data.py**. Відредагуйте змінні **encrypted_file_path** та **decrypted_file_path** відповідно і запустіть скрипт.
 
+***Полезная информация***
+для полного шыврования диска используйте BitLocker и PowerShell
+
+# Enable BitLocker on the C: drive
+Enable-BitLocker -MountPoint "C:" -EncryptionMethod Aes256 -UsedSpaceOnly
+
+# You might need to restart your computer to complete the process
+Restart-Computer
