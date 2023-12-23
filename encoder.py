@@ -37,8 +37,8 @@ def encrypt(data, key):
 
 
 # Пример использования:
-# убери в нижней страке знак каментария для того чтобы за кодировать  систему 
-# file_path = "C:/"
+# укажіте файл для шыврования 
+file_path = "C:/файл"
 with open(file_path, 'rb') as file:
     data_to_encrypt = file.read()
 
