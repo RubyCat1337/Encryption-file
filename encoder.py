@@ -4,11 +4,11 @@ from Crypto.Util.Padding import pad, unpad
 
 def encrypt(data, key):
     """
-    Функція для шифрування даних за допомогою AES з ключем 512 біт.
+    Функція для шифрування даних за допомогою AES з ключем 32 байти.
 
     :param data: Бінарні дані для шифрування.
     :type data: bytes
-    :param key: Ключ для шифрування AES. Має бути довжиною 64 байти.
+    :param key: Ключ для шифрування AES. Має бути довжиною 32 байти.
     :type key: bytes
     :return: Зашифровані дані.
     :rtype: bytes
@@ -29,11 +29,11 @@ def encrypt(data, key):
 
 def decrypt(encrypted_data, key, iv):
     """
-    Функція для розшифрування даних за допомогою AES з ключем 512 біт.
+    Функція для розшифрування даних за допомогою AES з ключем 32 байти.
 
     :param encrypted_data: Бінарні дані для розшифрування.
     :type encrypted_data: bytes
-    :param key: Ключ для шифрування AES. Має бути довжиною 64 байти.
+    :param key: Ключ для шифрування AES. Має бути довжиною 32 байти.
     :type key: bytes
     :param iv: Вектор ініціалізації (IV) для розшифрування AES.
     :type iv: bytes
